@@ -427,8 +427,17 @@ span.itemLabel {
 	font-weight: var(--primary-font-bold);
 }
 
+.item-logo {
+	width: 268px;
+}
+
 /* Phone Landscape */
 @media (min-width: 480px) and (max-width: 1024px) and (orientation: landscape) {
+
+	.item-logo {
+		width: 268px;
+	}
+
 	.headerNavigation {
 		position:fixed;
 		top: 0px;
@@ -471,6 +480,10 @@ span.itemLabel {
 
 /* Mobile Phone Portrait */
 @media (min-width: 320px) and (max-width: 480px) {
+
+	.item-logo {
+		width: 200px;
+	}
 
     .headerNavigation {
         position:fixed;

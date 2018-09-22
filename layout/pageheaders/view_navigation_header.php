@@ -8,7 +8,8 @@
     </div>
     <div class="itemNavElement center">
         <h1 class="itemNavTitle">
-            <i class="fas fa-heart page-header-icon home"></i>&nbsp;<?=$pageDescription?>
+            <span><img class="item-logo" src="images/loveforsatos-icon.svg"/></span>
+            <!--<i class="fas fa-heart page-header-icon home"></i>&nbsp;<=$pageDescription?>-->
         </h1>
     </div>
     <div class="itemNavElement right">
