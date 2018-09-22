@@ -1,2 +1,2 @@
-# PHPTechDemo
-Fontawesome svgs
+# LoveForSatos
+Fontawesome svgs - most were cleared
