@@ -1,0 +1,357 @@
+
+.slick-slide:not(.item-select) {
+    margin-left: 15px;
+    margin-right: 15px;
+    outline: none;
+    /* Fix for iOS devices not displaying icons if hidden then shown */
+    -webkit-transform: translateZ(0);
+}
+
+.slick-slide:not(.item-select) {
+    opacity:0.3;
+    transition:opacity 1s ease-out;
+}
+
+.slick-current, .slick-active {
+    opacity:1!important;
+    transition:opacity 1s ease-in;
+}
+
+.slick-cloned {
+    opacity: 0.3;
+}
+
+.slick-arrow {
+    width: 63px;
+    height: 100%;
+    background-color: transparent;
+}
+.slick-prev {
+    left:0;
+    z-index: 100;
+}
+.slick-next {
+    right:0;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 35px;
+    opacity: .85;
+    color: var(--light-cotton-blue);
+}
+.slick-slide > img {
+    border-radius: 8px;
+}
+
+.slick-slide-img {
+    border-radius: 8px;
+}
+
+/* slide remove button */
+.inner-item {
+    position: relative;
+    width: 100%;
+}
+
+.item-remove-photo {
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    outline: none;
+}
+
+.item-remove-photo > span {
+    font-size:27px;
+    color: var(--button-warning-color);
+}
+
+.item-remove-photo > span:hover {
+    color: var(--button-warning-hover-color);
+}
+
+.item-name-label {
+    position: absolute;
+    width: var(--image-thumb-size);
+    height: 30px;
+    bottom: calc(var(--image-thumb-size) * -1);
+    left: 0;
+    padding-top: 4px;
+    box-sizing: border-box;
+    background-color: #00000080;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.item-name-label > span {
+    color: white;
+    font-weight: var(--primary-font-bold);
+    text-align: left;
+}
+
+.item-name-label > span:last-child {
+    color: white;
+    font-weight: var(--primary-font-bold);
+    text-align: right;
+}
+
+.item-icons {
+    position: relative;
+    font-weight: var(--primary-font-bold);
+}
+
+.item-icons .item-label {
+    position: relative;
+    color: white;
+    left: 8px;
+    float: left;
+}
+
+.item-icons .item-icon-fixed {
+    position: relative;
+    color: white;
+    right: 8px;
+    float: right;
+    margin: 0 4px;
+}
+
+.item-icons .item-icon-gender {
+    position: relative;
+    color: white;
+    right: 8px;
+    float: right;
+    margin: 0 4px;
+}
+
+.item-icons .item-age {
+    position: relative;
+    color: white;
+    right: 8px;
+    float: right;
+    margin: 0 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+.item-name-selector-label {
+    position: absolute;
+    width: var(--image-thumb-selector-size);
+    height: 30px;
+    bottom: calc(var(--image-thumb-selector-size) * -1);
+    left: 0;
+    padding-top: 4px;
+    box-sizing: border-box;
+    background-color: #00000080;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.item-name-selector-label > span {
+    color: white;
+    font-weight: var(--primary-font-bold);
+}
+
+.item-divider .menu-line {
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: block;
+    background-color: var(--light-medium-gray);
+    height: 1px;
+    pointer-events: none;
+}
+
+.no-slider-items {
+    color: var(--primary-font-color);
+    text-align: center;
+}
+
+.photo-selector {
+
+}
+
+.photo-selector.swal-modal {
+    width: 725px;
+}
+
+.photo-selector .slick-list {
+    margin: 0 6%;
+}
+
+.item-select.slick-slide {
+    margin: 0 20px;
+    outline: none;
+    /* Fix for iOS devices not displaying icons if hidden then shown */
+    -webkit-transform: translateZ(0);
+}
+
+
+.item-add-item {
+    position: absolute;
+    top: 3px;
+    right: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    outline: none;
+}
+
+
+.item-add-item > span {
+    font-size:27px;
+    color: var(--light-cotton-blue);
+}
+
+.item-add-item   > span:hover {
+    color: var(--button-hover-color);
+}
+
+/* Phone Landscape */
+@media (min-width: 480px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .item-remove-photo {
+        top: 5px;
+        right: 5px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .item-remove-photo > span {
+        font-size:36px;
+    }
+
+    .photo-selector.swal-modal {
+        width: 100%;
+    }
+
+    .item-add-item > span {
+        font-size:36px;
+    }
+
+    .item-add-item {
+        top: 6px;
+        right: 0px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .photo-selector .slick-list {
+        margin: 0 8%;
+    }
+
+    .item-select.slick-slide {
+        margin: 0 20px;
+    }
+
+}
+
+/* Tablet Landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .item-add-item > span {
+        font-size:36px;
+    }
+
+    .item-add-item {
+        top: 6px;
+        right: 0px;
+        width: 36px;
+        height: 36px;
+    }
+
+    .photo-selector .slick-list {
+        margin: 0 20%;
+    }
+
+    .item-select.slick-slide {
+        margin: 0 25px;
+    }
+
+}
+
+
+/* Tablet Portrait */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .item-remove-photo {
+        top: 7px;
+        right: 7px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .item-remove-photo > span {
+        font-size:40px;
+    }
+
+    .photo-selector.swal-modal {
+        width: 100%;
+    }
+
+    .item-add-item > span {
+        font-size:40px;
+    }
+
+    .item-add-item {
+        position: absolute;
+        top: 6px;
+        right: 2px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .photo-selector .slick-list {
+        margin: 0 10%;
+    }
+
+    .item-select.slick-slide {
+        margin: 0 20px;
+    }
+}
+
+/* Mobile Phones Portrait */
+@media (min-width: 320px) and (max-width: 480px)
+{
+    .item-remove-photo {
+        top: 7px;
+        right: 7px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .item-remove-photo > span {
+        font-size:40px;
+    }
+
+    .photo-selector.swal-modal {
+        width: 100%;
+    }
+
+    .item-add-item > span {
+        font-size:40px;
+    }
+
+    .item-add-item {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .photo-selector .slick-list {
+        margin: 0 10%;
+    }
+
+    .item-select.slick-slide {
+        margin: 0 20px;
+    }
+}

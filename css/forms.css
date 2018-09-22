@@ -1,0 +1,226 @@
+.itemForm {
+	max-width:400px;
+	margin:0px auto;
+	background:#fff;
+	border-radius:2px;
+	padding:20px;
+}
+.itemForm h1 {
+	display: block;
+	text-align: center;
+	padding: 0;
+	margin: 0px 0px 20px 0px;
+	color: #5C5C5C;
+	font-size:x-large;
+}
+.itemForm ul {
+	list-style:none;
+	padding:0;
+	margin:0;   
+}
+.itemForm li{
+	display: block;
+	padding: 9px;
+	border:1px solid #DDDDDD;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+.itemForm li:last-child:not(.listItem){
+	border:none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.listItem {
+
+}
+
+.itemForm li > label{
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color: var(--light-medium-gray);
+	font-size: 13px;
+	overflow: hidden;
+}
+
+.itemForm input[type="text"],
+.itemForm input[type="date"],
+.itemForm input[type="datetime"],
+.itemForm input[type="email"],
+.itemForm input[type="number"],
+.itemForm input[type="search"],
+.itemForm input[type="time"],
+.itemForm input[type="url"],
+.itemForm input[type="password"],
+.itemForm textarea,
+.itemForm select
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+	font-family: var(--primary-font);
+	color: var(--primary-font-color);
+}
+
+.itemForm.itemView {
+
+}
+
+.itemForm.itemView .item-view-label {
+	color: var(--primary-font-color);
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+}
+
+.item-edit-label {
+	color: var(--primary-font-color);
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+}
+
+.itemForm input[type="text"]:focus,
+.itemForm input[type="date"]:focus,
+.itemForm input[type="datetime"]:focus,
+.itemForm input[type="email"]:focus,
+.itemForm input[type="number"]:focus,
+.itemForm input[type="search"]:focus,
+.itemForm input[type="time"]:focus,
+.itemForm input[type="url"]:focus,
+.itemForm input[type="password"]:focus,
+.itemForm textarea:focus
+{
+}
+.itemForm input[type="text"]:disabled,
+.itemForm select:disabled,
+.itemForm textarea:disabled
+{
+	color: var(--button-warning-color);
+	-webkit-text-fill-color:var(--button-warning-color); /* for iOS */
+	background-color: white;
+	opacity: 1.0;
+}
+
+.itemForm select:disabled.arrowIcon {
+	background: none;
+}
+
+.itemForm li > span{
+	background: #F3F3F3;
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: #C0C0C0;
+	font-size: 11px;
+}
+
+.item-promised-list:not(.itemForm) > label{
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: #FFFFFF;
+	height: 14px;
+	padding: 2px 5px 2px 5px;
+	color: darkseagreen;
+	font-size: 13px;
+	overflow: hidden;
+}
+
+.item-promised-list:not(.itemForm) {
+	display: block;
+	padding: 9px;
+	border:1px solid lightgreen;
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+
+.item-promised-list:not(.itemForm) > span {
+	background: lightgreen;
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: lightgreen;
+	font-size: 11px;
+}
+
+.itemForm textarea{
+	resize:none;
+}
+.itemForm input[type="submit"],
+.itemForm input[type="button"]{
+	background: #2471FF;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	border-bottom: 3px solid #5994FF;
+	border-radius: 3px;
+	color: #D2E2FF;
+}
+.itemForm input[type="submit"]:hover,
+.itemForm input[type="button"]:hover{
+	background: #6B9FFF;
+	color:#fff;
+}
+
+.itemSelect {
+	color: var(--secondary-color);
+}
+
+.itemSelect select {
+	background: transparent;
+	border: none;
+
+}
+
+.itemSelect.arrowIcon {
+	background: url("../images/down-arrow.svg") no-repeat right center;
+	background-size: 18px 18px;
+	
+	width: 100%;
+	outline: none;
+	border: none;
+}
+
+.itemSelect.arrowIcon option {
+	font-weight: normal;
+	font-size: 14px;
+	background-color: aliceblue;
+	color: cornflowerblue;
+	text-align: center;
+	
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 1px;
+	text-overflow: '';
+}
+
+.li-nopadding {
+	padding:0!important;
+}
+
+/* SweetAlert v1.0.0 @Overrides */
+.swal-footer {
+	text-align: center!important;
+}
+
+.iconalertwarning {
+	background-image: url("../images/svgs/solid/exchange-alt.svg");
+}
