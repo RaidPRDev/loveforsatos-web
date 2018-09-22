@@ -1,2 +1,2 @@
-# LoveForSatos
-Fontawesome svgs - most were cleared
+# Fontawesome
+https://github.com/FortAwesome/Font-Awesome
