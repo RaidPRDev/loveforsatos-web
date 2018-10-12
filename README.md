@@ -1,4 +1,4 @@
-# LoveForSatos
+# loveforsatos-web
 > This web app was created for a non-profit organization -> Love For Satos https://love4satos.squarespace.com/
 
 ## Description
